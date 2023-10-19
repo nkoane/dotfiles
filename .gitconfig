@@ -1,0 +1,40 @@
+# This is Git's per-user configuration file.
+[user]
+	name = lebogang nkoane
+	email = 1555646+nkoane@users.noreply.github.com
+# Please adapt and uncomment the following lines:
+#	name = lebogang nkoane
+#	email = lebogang.nkoane@gmail.com
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[init]
+	defaultBranch = main
+[alias]
+	hist = log --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(red)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)' --graph --date=short
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[core]
+	excludesfile = /Users/ltdn/.gitignore_global
+	editor = hx
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/ltdn/.stCommitMsg
+[push]
+	autoSetupRemote = true
+[color]
+	ui = auto
+[pull]
+	rebase = false
