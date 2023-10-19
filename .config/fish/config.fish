@@ -15,7 +15,6 @@ end
 alias pnpx="pnpm dlx"
 alias edit="hx"
 alias ls="lsd -h"
-alias vim="nvim"
 alias dot-config="$(which git) --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias mkdir="mkdir -p"
 # Created by `pipx` on 2023-05-24 22:46:17
