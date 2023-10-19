@@ -2,9 +2,6 @@
 [user]
 	name = lebogang nkoane
 	email = 1555646+nkoane@users.noreply.github.com
-# Please adapt and uncomment the following lines:
-#	name = lebogang nkoane
-#	email = lebogang.nkoane@gmail.com
 [credential]
 	helper = osxkeychain
 [filter "lfs"]
