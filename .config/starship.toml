@@ -5,6 +5,9 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
+command_timeout=1000
+scan_timeout=10
+
 # Replace the '❯' symbol in the prompt with '➜'
 [character] # The name of the module we are configuring is 'character'
 success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
@@ -12,4 +15,58 @@ error_symbol = '[➜](bold red)' # The 'success_symbol' segment is being set to 
 
 # Disable the package module, hiding it from the prompt completely
 [package]
+disabled = true
+
+# customisation
+dot = '• '
+
+[os]
+disabled = true
+
+[nodejs]
+symbol = '🤖'
+format = '[$symbol](bold green) '
+
+[rust]
+symbol = '🦀 '
+format = '[$symbol]($style)'
+
+[php]
+symbol = '🐘 '
+format = '[$symbol](147 green) '
+
+[python]
+symbol = '🐍 '
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[status]
+symbol = '⨯ '
+format = '[$symbol $status]($style) '
+disabled = true
+
+[sudo]
+disabled = false
+symbol = "⚡◉ "
+style = 'bold red'
+format = '[$symbol]($style)'
+
+[shell]
+disabled = true
+fish_indicator = '◉'
+
+[time]
+disabled = true
+use_12hr = true
+
+[gcloud]
+disabled = true
+symbol = '☁️  '
+format = 'on [$symbol$account(@$domain)(\($project\))]($style) '
+
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = 'bold blue'
+disabled = true
+
+[azure]
 disabled = true

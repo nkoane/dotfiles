@@ -1,6 +1,11 @@
+function starship_transient_prompt_func
+  starship module character
+end
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
     starship init fish | source
+    enable_transience
     alias python=python3
 end
 
@@ -17,6 +22,8 @@ alias edit="hx"
 alias ls="lsd -h"
 alias dot-config="$(which git) --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias mkdir="mkdir -p"
+alias info="btop"
+
 # Created by `pipx` on 2023-05-24 22:46:17
 set PATH $PATH /Users/ltdn/.local/bin
 
@@ -27,7 +34,10 @@ source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
 # azd 
 set -gx AZURE_DEV_COLLECT_TELEMETRY "no"
 set -Ux EDITOR hx
-
-
 # zoxide
 zoxide init fish | source 
+
+
+# mojo
+set -gx MODULAR_HOME "/Users/ltdn/.modular"
+

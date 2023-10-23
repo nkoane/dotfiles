@@ -127,7 +127,7 @@ esac
 
 
 
-source /Users/ltdn/.config/broot/launcher/bash/br
+# source /Users/ltdn/.config/broot/launcher/bash/br
 
 # startup
 neofetch

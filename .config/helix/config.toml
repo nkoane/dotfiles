@@ -19,6 +19,8 @@ render = "all"
 
 [editor.lsp]
 display-messages = true
+display-signature-help-docs = true
+display-inlay-hints = true
 
 [editor.soft-wrap]
 enable = true
