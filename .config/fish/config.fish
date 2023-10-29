@@ -9,13 +9,6 @@ if status is-interactive
     alias python=python3
 end
 
-# pnpm
-set -gx PNPM_HOME "/Users/ltdn/Library/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-# pnpm end
-
 # my aliases
 alias pnpx="pnpm dlx"
 alias edit="hx"
@@ -41,3 +34,11 @@ zoxide init fish | source
 # mojo
 set -gx MODULAR_HOME "/Users/ltdn/.modular"
 
+# azd no tracking
+
+# pnpm
+set -gx PNPM_HOME "/Users/ltdn/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

@@ -3,7 +3,7 @@ name = "sql"
 scope = "source.sql"
 injection-regex = "sql"
 file-types = ["sql"]
-language-server = { command = "sql-language-server", args = ["up", "--method", "stdio"] }
+# language-server = { command = "sql-language-server", args = ["up", "--method", "stdio"] }
 
 [[language]]
 name = "toml"
