@@ -2,12 +2,12 @@ function starship_transient_prompt_func
   starship module character
 end
 
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-    starship init fish | source
-    enable_transience
-    alias python=python3
-end
+# if status is-interactive
+#     # Commands to run in interactive sessions can go here
+#     starship init fish | source
+#     enable_transience
+#     alias python=python3
+# end
 
 # my aliases
 alias pnpx="pnpm dlx"
@@ -42,3 +42,8 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+# bat and delta
+set -gx BAT_THEME Nord
+
+starship init fish | source

@@ -12,7 +12,7 @@
 [init]
 	defaultBranch = main
 [alias]
-	hist = log --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(red)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)' --graph --date=short
+	hist = log --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(red)%s %C(bold red)<%an>%C(reset) %C(blue)%d%C(reset)' --graph --date=short
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	co = checkout
 	br = branch
@@ -21,6 +21,7 @@
 [core]
 	excludesfile = /Users/ltdn/.gitignore_global
 	editor = hx
+	pager = delta 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -35,3 +36,26 @@
 	ui = auto
 [pull]
 	rebase = false
+
+[interactive]
+	diffFilter = delta --color-only --features=interactive
+[include]
+	path = ~/.config/delta/themes.gitconfig
+[delta]
+    features = mellow-barbet
+	true-color = always
+	line-numbers = true
+
+[delta "interactive"]
+    keep-plus-minus-markers = false
+
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
+
+

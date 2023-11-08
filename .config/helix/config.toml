@@ -40,8 +40,6 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
-
-
 [keys.insert]
 "A-down" = [
   "extend_to_line_bounds",
