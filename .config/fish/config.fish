@@ -16,6 +16,7 @@ alias ls="lsd -h"
 alias dot-config="$(which git) --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias mkdir="mkdir -p"
 alias info="btop"
+alias copilot="gh copilot suggest"
 
 # Created by `pipx` on 2023-05-24 22:46:17
 set PATH $PATH /Users/ltdn/.local/bin
