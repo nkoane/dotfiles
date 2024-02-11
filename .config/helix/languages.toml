@@ -9,8 +9,13 @@ file-types = ["sql"]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
 
+[language-server.emmet-ls]
+args = ["--stdio"]
+command="emmet-ls"
+
 [[language]]
 name = "html"
+language-servers = ["vscode-html-language-server", "emmet-ls"]
 
 [language-server.rust-analyzer.config.check]
 command = "clippy"

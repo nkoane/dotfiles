@@ -12,11 +12,13 @@ end
 # my aliases
 alias pnpx="pnpm dlx"
 alias edit="hx"
+alias vim="nvim"
 alias ls="lsd -h"
 alias dot-config="$(which git) --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias mkdir="mkdir -p"
 alias info="btop"
 alias copilot="gh copilot suggest"
+alias python="python3"
 
 # Created by `pipx` on 2023-05-24 22:46:17
 set PATH $PATH /Users/ltdn/.local/bin
