@@ -140,3 +140,5 @@ source /Users/ltdn/Library/Application\ Support/org.dystroy.broot/launcher/bash/
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+PATH=~/.console-ninja/.bin:$PATH
