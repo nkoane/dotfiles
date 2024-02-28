@@ -2,6 +2,7 @@
 [user]
 	name = lebogang nkoane
 	email = 1555646+nkoane@users.noreply.github.com
+	signingkey = EF59B57EC7D292D938858AB242B34DD67B34C2EF
 [credential]
 	helper = osxkeychain
 [filter "lfs"]
@@ -30,6 +31,7 @@
 	trustExitCode = true
 [commit]
 	template = /Users/ltdn/.stCommitMsg
+	gpgsign = true
 [push]
 	autoSetupRemote = true
 [color]
@@ -61,3 +63,6 @@
 
 [rerere]
 	enabled = true
+[maintenance]
+	repo = /Users/ltdn/develop/create/dijo
+	repo = /Users/ltdn/develop/work/school

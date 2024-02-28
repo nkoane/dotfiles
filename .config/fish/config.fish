@@ -50,3 +50,6 @@ end
 set -gx BAT_THEME Nord
 
 starship init fish | source
+
+# signed git  commites
+export GPG_TTY=$(tty)
