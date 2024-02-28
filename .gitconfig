@@ -20,18 +20,18 @@
 	ci = commit
 	st = status
 [core]
-	excludesfile = /Users/ltdn/.gitignore_global
+	excludesfile = $HOME/.gitignore_global
 	editor = hx
 	pager = delta 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+#	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+#	trustExitCode = true
 [commit]
-	template = /Users/ltdn/.stCommitMsg
-	gpgsign = true
+	template = $HOME/.stCommitMsg
+#	gpgsign = true
 [push]
 	autoSetupRemote = true
 [color]
@@ -64,5 +64,5 @@
 [rerere]
 	enabled = true
 [maintenance]
-	repo = /Users/ltdn/develop/create/dijo
-	repo = /Users/ltdn/develop/work/school
+#	repo = /Users/ltdn/develop/create/dijo
+#	repo = /Users/ltdn/develop/work/school
