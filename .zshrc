@@ -34,3 +34,5 @@ eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# gpg stuff
+export GPG_TTY=$(tty)

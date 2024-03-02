@@ -31,7 +31,7 @@
 #	trustExitCode = true
 [commit]
 	template = $HOME/.stCommitMsg
-#	gpgsign = true
+	gpgsign = true
 [push]
 	autoSetupRemote = true
 [color]
