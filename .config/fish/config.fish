@@ -19,6 +19,7 @@ alias mkdir="mkdir -p"
 alias info="btop"
 alias copilot="gh copilot suggest"
 alias python="python3"
+alias lg="lazygit"
 
 # Created by `pipx` on 2023-05-24 22:46:17
 set PATH $PATH /Users/ltdn/.local/bin
@@ -53,3 +54,6 @@ starship init fish | source
 
 # signed git  commites
 export GPG_TTY=$(tty)
+
+# go path for formatting
+set -gx PATH $PATH $HOME/go/bin
